@@ -1,0 +1,20 @@
+{
+  "model_name": "RandomForestClassifier",
+  "description": "Meilleur modèle sélectionné après comparaison (Logistic Regression, SVM, Random Forest, Gradient Boosting)",
+  "hyperparameters": {
+    "n_estimators": 200,
+    "max_depth": 12,
+    "min_samples_split": 5,
+    "min_samples_leaf": 2,
+    "max_features": "sqrt",
+    "bootstrap": true,
+    "random_state": 42
+  },
+  "dataset": "WA_Fn-UseC_-Telco-Customer-Churn.csv",
+  "target": "Churn",
+  "task": "classification",
+  "metrics": {
+    "primary": "F1-Score",
+    "note": "Les métriques finales dépendent de l'exécution (voir rapport)"
+  }
+}
